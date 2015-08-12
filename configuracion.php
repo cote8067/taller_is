@@ -1,9 +1,6 @@
 <?php 
-//Datos del servidor y base de datos 
-$server="54.187.145.90"; 
-$username="tomas"; 
-$password="tomas"; 
-$database_name="db"; 
+//Datos del servidor y base de datos  
+include('../config/config.php');
 //Establecemos la conexión con el servidor 
 $conexion=mysql_connect($server, $username, $password) 
 or die("Problemas al tratar de establecer la conexion"); 
